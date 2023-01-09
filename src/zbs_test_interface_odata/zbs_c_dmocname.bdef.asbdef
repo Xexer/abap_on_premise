@@ -1,0 +1,11 @@
+projection;
+strict;
+
+define behavior for ZBS_C_DmoCName alias Name
+{
+  use create;
+  use update;
+  use delete;
+
+  use action rebuildData;
+}

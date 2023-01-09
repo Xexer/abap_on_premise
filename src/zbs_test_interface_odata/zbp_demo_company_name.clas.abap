@@ -1,0 +1,5 @@
+CLASS zbp_demo_company_name DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zbs_i_dmocname.
+ENDCLASS.
+
+CLASS zbp_demo_company_name IMPLEMENTATION.
+ENDCLASS.

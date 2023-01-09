@@ -1,0 +1,21 @@
+managed implementation in class zbp_demo_company_name unique;
+strict;
+
+define behavior for ZBS_I_DmoCName alias Name
+persistent table zbs_dmo_cname
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+
+  static action rebuildData;
+
+  mapping for zbs_dmo_cname
+  {
+    CompanyName = name;
+    Branch = branch;
+    CompanyDescription = description;
+  }
+}

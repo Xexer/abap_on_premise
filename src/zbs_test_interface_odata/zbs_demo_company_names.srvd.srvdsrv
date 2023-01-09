@@ -1,0 +1,4 @@
+@EndUserText.label: 'Company names'
+define service ZBS_DEMO_COMPANY_NAMES {
+  expose ZBS_C_DmoCName as CompanyNames;
+}
