@@ -10,8 +10,6 @@ authorization master ( instance )
   update;
   delete;
 
-  static action rebuildData;
-
   mapping for zbs_dmo_cname
   {
     CompanyName = name;
