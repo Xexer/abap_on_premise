@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Demo function group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZBS_DEMO_FG_INTERFACETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZBS_DEMO_FG_INTERFACE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_BS_DEMO_GET_CNAMES</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Company names</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ID_NAME</PARAMETER>
+       <TYP>ZBS_DMO_CNAME-NAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_BRANCH</PARAMETER>
+       <TYP>ZBS_DMO_CNAME-BRANCH</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_CNAMES</PARAMETER>
+       <TYP>ZBS_T_DEMO_CNAMES</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ED_ERROR</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ID_NAME</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_BRANCH</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_CNAMES</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ED_ERROR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
